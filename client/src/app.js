@@ -1,4 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SideBar from './sidebar.js';
 
-ReactDOM.render(<h1>Hello World from React</h1>, document.getElementById('root'));
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render () {
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
