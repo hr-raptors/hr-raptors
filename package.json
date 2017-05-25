@@ -2,7 +2,7 @@
   "name": "course.thesis",
   "version": "1.0.0",
   "scripts": {
-    "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash",
+    // "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash",
     "start": "nodemon server",
     "test": "NODE_ENV=test grunt test",
     "build": "webpack --watch"
@@ -20,12 +20,10 @@
     "connect-redis": "^3.2.0",
     "cookie-parser": "^1.4.3",
     "ejs": "^2.5.6",
-    "eslint": "^3.19.0",
     "express": "^4.15.2",
     "express-session": "^1.15.1",
-    "grunt-cli": "^1.2.0",
     "grunt-pg": "https://github.com/watsoncj/grunt-pg.git",
-    "knex": "^0.13.0",
+    "knex": "^0.12.9",
     "morgan": "^1.8.1",
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.1",

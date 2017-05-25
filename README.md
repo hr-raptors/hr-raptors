@@ -72,8 +72,6 @@ In terminal, from the root directory:
 
 `knex migrate:latest --env NODE_ENV`
 
-Do NOT run if first time setting up:
-
 `knex migrate:rollback --env NODE_ENV`
 
 `knex seed:run --env NODE_ENV`
