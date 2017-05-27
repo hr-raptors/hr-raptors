@@ -13,21 +13,21 @@ import { fetchCode, addCode } from "../../actions/codeActions"
 })
 class reduxView extends React.Component {
   componentWillMount() {
-    this.props.dispatch(fetchUser())
+    this.props.dispatch(fetchUser());
   }
 
   fetchCode() {
-    this.props.dispatch(fetchCode())
+    this.props.dispatch(fetchCode());
   }
 
   addCodeClick() {
-    console.log('I was clicked');
-    this.props.dispatch(addCode('3', "Hello World AGAIN"))
+    this.props.dispatch(addCode('3', 'Hello JT'));
   }
 
   render() {
     const { user, code } = this.props;
-
+    // user = this.props.user;
+    // code = this.props.code 
     if (!code.length) {
       return (
         <div>
