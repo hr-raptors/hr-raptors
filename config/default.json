@@ -1,13 +1,6 @@
 {
   "knex": {
     "client": "postgresql",
-    "connection": {
-      "database": "thesis",
-      "user": "postgres",
-      "password": "postgres",
-      "host": "localhost",
-      "port": 5432
-    },
     "pool": {
       "min": 1,
       "max": 2
@@ -18,24 +11,6 @@
     },
     "seeds": {
       "directory": "db/seeds"
-    }
-  },
-
-  "passport": {
-    "Google": {
-      "clientID": "187835082972-in89sndenvl90k8kvr1tpa77k05tns2n.apps.googleusercontent.com",
-      "clientSecret": "iC1lqc6NOCPseJNny4YLRfqv",
-      "callbackURL": "http://localhost:3000/auth/google/callback"
-    },
-    "Facebook": {
-      "clientID": "652258771628684",
-      "clientSecret": "e2008c46ebe5082971e50d573b132aba",
-      "callbackURL": "http://localhost:3000/auth/facebook/callback"
-    },
-    "Twitter": {
-      "consumerKey": "ahlp6B3eiityWTiwjva44upDK",
-      "consumerSecret": "0yZeAHSUcl1AGscfpv07jaJaND3iCUdNdGjbo7ePjrNhoJLQxN",
-      "callbackURL": "http://localhost:3000/auth/twitter/callback"
     }
   }
 }

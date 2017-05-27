@@ -12,7 +12,7 @@ class SideBar extends React.Component {
     return (
       <div>
         <div className="left">
-        <h1>Nav</h1>
+        <h1>Side Bar</h1>
         </div>
       </div>
     );
