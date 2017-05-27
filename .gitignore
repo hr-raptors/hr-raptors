@@ -1,8 +1,5 @@
 # Project specific
-config/development.json
-config/production.json
-config/staging.json
-config/test.json
+.env
 
 # OS X
 .DS_Store
