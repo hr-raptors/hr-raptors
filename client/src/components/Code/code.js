@@ -1,5 +1,6 @@
 import React from 'react';
-//
+import ReactDOMServer from 'react-dom/server';
+
 import { connect } from "react-redux"
 import { fetchCode } from "../../actions/codeActions"
 //
@@ -25,19 +26,19 @@ class Code extends React.Component {
   render() {
     const { code } = this.props;
 
-    if (!code.length) {
-      return (
-        <article className="center">
-          <div>
-             We gonna need some code here
-          </div>
-        </article>
-      );
-    }
-
+    // if (!code.length) {
+    //   return (
+    //     <article className="center">
+    //       <div>
+    //          We gonna need some code here
+    //       </div>
+    //     </article>
+    //   );
+    // }
+    var count = 0;
     const mappedCode = code.map((code, key) =>
       <div key={key} className="codepart">
-        {code.text}
+        {count++} {ReactDOMServer.renderToStaticMarkup(<div>{code.text}</div>)}
       </div>
     );
 
@@ -46,7 +47,7 @@ class Code extends React.Component {
         <h1>Materialize Studio</h1>
         <h2>Your project code goes here</h2>
         <div className="scrollbar" id="style-1">
-          {mappedCode}
+          {mappedCode} 
         </div>
       </article>
     )

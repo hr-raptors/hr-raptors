@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ItemTypes } from '../View/Constants';
+import { ItemTypes } from '../View/constants.js';
 import { DragSource } from 'react-dnd';
 import PropTypes from 'prop-types';
 
