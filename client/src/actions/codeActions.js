@@ -30,4 +30,10 @@ module.exports = {
       payload: {},
     };
   },
+  fetchView: (view) => {
+    return {
+      type: 'FETCH_VIEW',
+      payload: { view },
+    };
+  },
 };
