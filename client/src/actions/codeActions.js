@@ -36,4 +36,10 @@ module.exports = {
       payload: { view },
     };
   },
+  changeDropComponent: (view) => {
+    return {
+      type: 'CHANGE_DROP_COMPONENT',
+      payload: { view },
+    };
+  },
 };
