@@ -11,8 +11,8 @@ router.route('/')
     res.status(201).send({ data: 'Posted!' });
   });
 
-var code = [ {id:"1", text: "Hello World"}, {id:"2", text: "Hello AGAIN World"},
-  {id:"3", text: '<a class="waves-effect waves-teal btn-flat">Button</a>'}
+var code = [ {id: '1', text: 'Hello World'}, {id: '2', text: 'Hello AGAIN World'},
+  {id: '3', text: 'Hello One More Time!'}
 ];
 
 router.route('/code')

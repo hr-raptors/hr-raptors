@@ -4443,6 +4443,10 @@ react-dnd@^2.4.0:
     lodash "^4.2.0"
     prop-types "^15.5.8"
 
+react-dom-server@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/react-dom-server/-/react-dom-server-0.0.5.tgz#75b6c0f5946e08e84db9dda6eca5e48fed25f723"
+
 react-dom@^15.4.2:
   version "15.5.4"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.5.4.tgz#ba0c28786fd52ed7e4f2135fe0288d462aef93da"

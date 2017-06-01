@@ -20,7 +20,7 @@ module.exports = {
       type: 'ADD_CODE',
       payload: {
         id,
-        text,
+        text
       },
     };
   },
