@@ -29,7 +29,7 @@ export default function reducer(state = {
     return Object.assign({}, state, {view: state.view.concat(action.payload.view)});
   }
   case 'CHANGE_DROP_COMPONENT': {
-    return Object.assign({}, state, {view: action.payload.view});
+    return Object.assign({}, state, {view: state.view.concat(action.payload.view)});
   }
   }
 
