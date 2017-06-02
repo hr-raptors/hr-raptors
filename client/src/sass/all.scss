@@ -11,7 +11,7 @@ html,body{
 }
 
 .center-content{
-  margin: 8% 15%;
+  margin: 15% 15%;
 }
 
 .footer{background-color: #414141}
@@ -51,4 +51,8 @@ html,body{
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #555;
+}
+
+.row {
+  padding: 0 0;
 }

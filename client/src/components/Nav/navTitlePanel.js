@@ -12,6 +12,7 @@ const styles = {
     padding: '2.5vh',
     fontSize: '1.5em',
     width: '100%',
+    zIndex: '99',
   },
 };
 

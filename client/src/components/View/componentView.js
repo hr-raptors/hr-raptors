@@ -1,13 +1,14 @@
 import React from 'react';
 import { DropTarget } from 'react-dnd';
-import { ItemTypes } from './constants';
-
+import { ItemTypes } from './Constants';
 
 const squareTarget = {
   drop(props, monitor) {
-    const item = monitor.getItem();
-    props.added(item.component);
-    return item;
+    const componentKey = monitor.getItem();
+    console.log(componentKey);
+    console.log('DROPPED', props);
+    props.handleDroppedComponent(componentKey);
+    return componentKey;
   }
 };
 
@@ -18,17 +19,14 @@ let collect = function(connect, monitor) {
   };
 };
 
-
 class ComponentView extends React.Component {
   renderOverlay(color) {
     return (
-      <div>
-       <div style={{
-         height: '400px',
-         width: '400px',
-         backgroundColor: color,
-       }} />
-       </div>
+      <div style={{
+        height: '1.5em',
+        width: '100%',
+        backgroundColor: color,
+      }} />
     );
   }
 
@@ -42,4 +40,4 @@ class ComponentView extends React.Component {
     );
   }
 }
-export default DropTarget(ItemTypes.COMPONENT, squareTarget, collect)(ComponentView, squareTarget);
+export default DropTarget(ItemTypes.COMPONENT, squareTarget, collect)(ComponentView);

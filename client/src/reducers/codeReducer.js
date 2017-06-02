@@ -1,5 +1,10 @@
+import React from 'react';
+import ComponentView from '../components/view/componentView';
+
 export default function reducer(state = {
   code: [],
+  view: [],
+  index: 0,
   fetching: false,
   fetched: false,
   error: null,
@@ -20,6 +25,18 @@ export default function reducer(state = {
   }
   case 'CLEAR_CODE': {
     return Object.assign({}, state, {code: [] });
+  }
+  case 'FETCH_DEFAULT_VIEW': {
+    return Object.assign({}, state, {view: state.view.concat(action.payload.view)});
+  }
+  case 'FETCH_VIEW': {
+    return Object.assign({}, state, {fetchingView: true});
+  }
+  case 'CHANGE_DROP_COMPONENT': {
+    return Object.assign({}, state, {view: action.payload.view});
+  }
+  case 'INCREMENT_INDEX': {
+    return Object.assign({}, state, {index: action.payload.index});
   }
   }
 

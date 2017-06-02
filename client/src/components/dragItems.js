@@ -92,7 +92,9 @@ module.exports = {
     </div>,
   rowCol1:
     <div className="row">
-      <div className="col s12">1</div>
+      <div className="col s12">
+          1
+      </div>
     </div>,
   rowCol2:
     <div className="row">

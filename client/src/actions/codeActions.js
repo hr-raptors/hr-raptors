@@ -30,4 +30,27 @@ module.exports = {
       payload: {},
     };
   },
+  fetchDefaultView: (view) => {
+    return {
+      type: 'FETCH_DEFAULT_VIEW',
+      payload: { view },
+    };
+  },
+  fetchView: () => {
+    return {
+      type: 'FETCH_VIEW',
+    };
+  },
+  changeDropComponent: (view) => {
+    return {
+      type: 'CHANGE_DROP_COMPONENT',
+      payload: { view },
+    };
+  },
+  incrementIndex: (index) => {
+    return {
+      type: 'INCREMENT_INDEX',
+      payload: { index },
+    };
+  },
 };

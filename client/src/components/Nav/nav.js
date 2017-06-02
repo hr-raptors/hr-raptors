@@ -70,7 +70,7 @@ class Nav extends React.Component {
 
     return (
 
-      <Navbar {...sidebarProps}>
+      <Navbar {...sidebarProps} className="navZ">
         <NavTitlePanel title={contentHeader} />
         <div style={styles.content}>
           {this.props.view}
