@@ -36,10 +36,10 @@ module.exports = {
       payload: { view },
     };
   },
-  changeDropComponent: (view) => {
+  changeDropComponent: (view, index) => {
     return {
       type: 'CHANGE_DROP_COMPONENT',
-      payload: { view },
+      payload: { view, index },
     };
   },
 };
