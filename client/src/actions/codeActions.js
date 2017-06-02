@@ -30,10 +30,15 @@ module.exports = {
       payload: {},
     };
   },
-  fetchView: (view) => {
+  fetchDefaultView: (view) => {
+    return {
+      type: 'FETCH_DEFAULT_VIEW',
+      payload: { view },
+    };
+  },
+  fetchView: () => {
     return {
       type: 'FETCH_VIEW',
-      payload: { view },
     };
   },
   changeDropComponent: (view) => {
