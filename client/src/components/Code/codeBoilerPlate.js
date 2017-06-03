@@ -7,7 +7,7 @@ const CodeBoilerPlate = (props) => {
 
   return (
   <code>
-    <div>
+    <div className="code-box">
       {beautify_html(ReactDOMServer.renderToStaticMarkup(
         <html lang="en">
         <head>

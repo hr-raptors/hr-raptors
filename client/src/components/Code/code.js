@@ -7,7 +7,7 @@ import CodeBoilerPlate from './codeBoilerPlate'
 
 @connect((store) => {
   return {
-    code: store.code.code,
+    components: store.code.components,
   };
 })
 class Code extends React.Component {
@@ -18,11 +18,11 @@ class Code extends React.Component {
 
   render() {
 
-    const { code } = this.props;
+    const { components } = this.props;
 
-    const mappedCode = code.map((code, index) =>
+    const mappedCode = components.map((code, index) =>
       <div key={index} className="codepart">
-        {code.text}
+        {code.componentCode}
       </div>
     );
 

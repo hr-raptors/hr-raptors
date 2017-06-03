@@ -176,4 +176,29 @@ module.exports = {
     <video className="responsive-video" controls>
       <source src="movie.mp4" type="video/mp4" />
     </video>,
+  h1:
+    <h1>Header 1</h1>,
+  h2:
+    <h2>Header 2</h2>,
+  h3:
+    <h3>Header 3</h3>,
+  h4:
+    <h4>Header 4</h4>,
+  h5:
+    <h5>Header 5</h5>,
+  h6:
+    <h6>Header 6</h6>,
+  strong:
+    <strong>Very Important</strong>,
+  emphasis:
+    <em>Important information</em>,
+  bold:
+    <b>Bloody, bold, and resolute</b>,
+  paragraph:
+    <p>This is a paragraph.</p>,
+  blockquote:
+    <blockquote>“Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the
+      Galaxy lies a small unregarded yellow sun. Orbiting this at a distance of roughly ninety-two million
+      miles is an utterly insignificant little blue green planet whose ape-descended life forms are so
+      amazingly primitive that they still think digital watches are a pretty neat idea.”</blockquote>,
 };

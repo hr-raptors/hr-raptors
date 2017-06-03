@@ -2,3 +2,4 @@ public/dist/*
 server/views/*
 client/src/components/View/reduxView.js
 client/src/components/Code/code.js
+client/src/components/View/view.js
