@@ -110,32 +110,32 @@ passport.use('local-login', new LocalStrategy({
       });
   }));
 
-passport.use('google', new GoogleStrategy({
-  clientID: process.env.GOOGLE_CLIENT_ID,
-  clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  callbackURL: process.env.GOOGLE_CALLBACK_URL
-},
-  (accessToken, refreshToken, profile, done) => getOrCreateOAuthProfile('google', profile, done))
-);
+// passport.use('google', new GoogleStrategy({
+//   clientID: process.env.GOOGLE_CLIENT_ID,
+//   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+//   callbackURL: process.env.GOOGLE_CALLBACK_URL
+// },
+//   (accessToken, refreshToken, profile, done) => getOrCreateOAuthProfile('google', profile, done))
+// );
 
-passport.use('facebook', new FacebookStrategy({
-  clientID: process.env.FACEBOOK_CLIENT_ID,
-  clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
-  callbackURL: process.env.FACEBOOK_CALLBACK_URL,
-  profileFields: ['id', 'emails', 'name']
-},
-  (accessToken, refreshToken, profile, done) => getOrCreateOAuthProfile('facebook', profile, done))
-);
+// passport.use('facebook', new FacebookStrategy({
+//   clientID: process.env.FACEBOOK_CLIENT_ID,
+//   clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
+//   callbackURL: process.env.FACEBOOK_CALLBACK_URL,
+//   profileFields: ['id', 'emails', 'name']
+// },
+//   (accessToken, refreshToken, profile, done) => getOrCreateOAuthProfile('facebook', profile, done))
+// );
 
-// REQUIRES PERMISSIONS FROM TWITTER TO OBTAIN USER EMAIL ADDRESSES
-passport.use('twitter', new TwitterStrategy({
-  consumerKey: process.env.TWITTER_CLIENT_ID,
-  consumerSecret: process.env.TWITTER_CLIENT_SECRET,
-  callbackURL: process.env.TWITTER_CALLBACK_URL,
-  userProfileURL: 'https://api.twitter.com/1.1/account/verify_credentials.json?include_email=true'
-},
-  (accessToken, refreshToken, profile, done) => getOrCreateOAuthProfile('twitter', profile, done))
-);
+// // REQUIRES PERMISSIONS FROM TWITTER TO OBTAIN USER EMAIL ADDRESSES
+// passport.use('twitter', new TwitterStrategy({
+//   consumerKey: process.env.TWITTER_CLIENT_ID,
+//   consumerSecret: process.env.TWITTER_CLIENT_SECRET,
+//   callbackURL: process.env.TWITTER_CALLBACK_URL,
+//   userProfileURL: 'https://api.twitter.com/1.1/account/verify_credentials.json?include_email=true'
+// },
+//   (accessToken, refreshToken, profile, done) => getOrCreateOAuthProfile('twitter', profile, done))
+// );
 
 const getOrCreateOAuthProfile = (type, oauthProfile, done) => {
   return models.Auth.where({ type, oauth_id: oauthProfile.id }).fetch({

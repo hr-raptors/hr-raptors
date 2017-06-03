@@ -5,6 +5,10 @@
       "url": "heroku/nodejs"
     }
   ],
+  
+  "env": {
+    "NODE_MODULES_CACHE": "false",
+  },
 
   "addons": [
     "heroku-redis",
