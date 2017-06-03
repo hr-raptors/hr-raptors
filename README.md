@@ -1,6 +1,7 @@
-# Project Name
+# Material-GUI
 
 The project description
+Quickly build an html webpage with drag and drop components. 
 
 ## Team
 
