@@ -1,5 +1,4 @@
 import React from 'react';
-
 module.exports = {
   button: <a className="waves-effect waves-light btn-large">Button</a>,
   footer:
