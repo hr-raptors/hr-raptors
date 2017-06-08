@@ -1,10 +1,8 @@
-import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-
-let beautify_html = require('js-beautify').html;
+import React from "react";
+import ReactDOMServer from "react-dom/server";
+let beautify_html = require("js-beautify").html;
 
 const CodeBoilerPlate = (props) => {
-
   return (
   <code>
     <div className="code-box">
@@ -26,10 +24,12 @@ const CodeBoilerPlate = (props) => {
           {props.code}
         </body>
         </html>
-      ), {'wrap-attributes': 'force'})}
+      ), {"wrap-attributes": "force"})}
       </div>
   </code>
   );
 };
 
 export default CodeBoilerPlate;
+
+

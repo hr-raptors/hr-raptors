@@ -17,6 +17,11 @@ exports.up = function (knex, Promise) {
       table.string('password', 100).nullable();
       table.string('salt', 100).nullable();
       table.integer('profile_id').references('profiles.id').onDelete('CASCADE');
+    }),
+    knex.schema.createTableIfNotExists('test1', function(table) {
+      table.increments('id').unsigned().primary();
+      table.text('HTML').notNullable();
+      table.string('profile_email', 100).references('profiles.email').onDelete('CASCADE');
     })
   ]);
 };
