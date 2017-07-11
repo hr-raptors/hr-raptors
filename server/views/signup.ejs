@@ -10,7 +10,7 @@
           <div class="card darken-1 z-depth-4">
             <div class="card-content black-text">
               <span class="card-title">
-                <h1><span class="fa fa-sign-in"></span> Signup</h1>
+                <h1><span class="fa fa-sign-in"></span> Sign Up</h1>
                 <!-- show any messages that come back with authentication -->
                 <% if (message.length > 0) { %>
                 <div class="alert alert-danger"><%= message %></div>
@@ -20,17 +20,17 @@
               <div class="row">
                 <form action="/signup" method="post" class="col s12">
                   <div class="input-field col s12">
-                    <i class="material-icons prefix">account_circle</i>
+                    <i class="fa fa-user-circle-o fa-5x prefix" aria-hidden="true"></i>
                     <input id="icon_prefix" type="text" class="form-control validate" name="email">
                     <label for="icon_prefix">Email</label>
                   </div>
                   <div class="input-field col s12">
-                    <i class="material-icons prefix">vpn_key</i>
+                    <i class="fa fa-lock fa-5x prefix" aria-hidden="true"></i>
                     <input type="password" class="form-control validate" name="password">
                     <label for="icon_prefix">Password</label>
                   </div>
-                  <button class="btn waves-effect waves-light" type="submit" name="action" style="background-color:black">Login
-                    <i class="material-icons right">send</i>
+                  <button class="btn waves-effect waves-light" type="submit" name="action" style="background-color:black">Sign up
+                    <i class="fa fa-paper-plane-o fa-4x right" aria-hidden="true"></i>
                   </button>
                 </form>
               </div>

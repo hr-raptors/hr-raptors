@@ -44,7 +44,7 @@ module.exports = {
         })
         .catch((err) => {
           dispatch({type: 'SAVE_PROJECT_REJECTED', payload: err});
-          alert('Oops!\nwe already have this project name in the database.\nPlease help us by selecting another name');
+          alert('Oops!\nPlease select another name');
         });
     };
   },
