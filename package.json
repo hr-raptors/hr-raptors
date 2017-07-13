@@ -2,7 +2,7 @@
   "name": "course.thesis",
   "version": "1.0.0",
   "engines": {
-    "node": ">=6.4.0"
+    "node": ">=6.11.1"
   },
   "scripts": {
     "postinstall": "npm rebuild node-sass",
